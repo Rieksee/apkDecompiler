@@ -40,7 +40,7 @@ if __name__ == '__main__':
     for dirname in folders:
         for onedir in fild_all_dirs(dirname):
                 cmd = jadpath + " -o -d" + onedir + " -sjava " + onedir + "\*.class"
-                print cmd
+                print(cmd)
                 os.system(cmd)
                 cmd = "del " + onedir + "\*.class"
                 os.system(cmd)
